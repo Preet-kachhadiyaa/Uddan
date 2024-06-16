@@ -1,8 +1,33 @@
-import React from "react";
-import "/node_modules/bootstrap/dist/css/bootstrap.min.css";
-import { NavLink } from "react-router-dom";
+import React, { useState } from "react";
 
 const Contact = () => {
+  const [data, setData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    other: "",
+  });
+
+  const InputEvent = (event) => {
+    const { name, value } = event.target;
+
+    setData((preVal) => {
+      return {
+        ...preVal,
+        [name]: value,
+      };
+    });
+  };
+
+  const formSubmit = (e) => {
+    e.preventDefault();
+    alert(
+      `My Name Is=${data.name}.
+       My Email Is=${data.email}.
+       My Phone Number=${data.phone}.
+       And Other Details=${data.other}`
+    );
+  };
   return (
     <>
       <div className="my-3">
@@ -13,57 +38,72 @@ const Contact = () => {
         <div className="row">
           <div className="col-lg-6 col-md-6 col-12 mx-auto">
             <div className="w-50 mx-auto"></div>
-            <form action="#">
-              <div className="form-group">
-                <label for="Name">Name</label>
-                <input
-                  type="text"
-                  className="form-control my-2"
-                  placeholder="Enter Name"
-                  id="Name"
-                  value=""
-                />
-              </div>
-
-              <div className="form-group">
-                <label for="Email">Email</label>
-                <input
-                  type="Email"
-                  className="form-control my-2"
-                  placeholder="EnterEmail"
-                  id="Email"
-                  autocomplete="off"
-                  value=""
-                />
-              </div>
-
-              <div className="form-group">
-                <label for="Phone No">Phone No</label>
-                <input
-                  type="text"
-                  className="form-control my-2"
-                  placeholder="Enter Phone No"
-                  id="Pno"
-                  value=""
-                />
-              </div>
-
-              <div className="form-group">
-                <label for="Message">Message</label>
-                <textarea className="form-control my-2"></textarea>
-              </div>
-
-              <div className="form-group form-check">
-                <label className="form-check-label">
-                  <input className="form-check-input" type="checkbox" />
-                  Remember me
+            <form onSubmit={formSubmit} className="mt-4">
+              <div className="mb-3">
+                <label htmlFor="name" className="form-label">
+                  Name:
                 </label>
+                <input
+                  type="text"
+                  className="form-control"
+                  id="name"
+                  name="name"
+                  value={data.name}
+                  onChange={InputEvent}
+                  placeholder="Enter your name"
+                  autoComplete="off"
+                  required
+                />
               </div>
-              <button
-                type="submit"
-                id="btn"
-                className="btn btn-outline-primary mt-3 my-2"
-              >
+              <div className="mb-3">
+                <label htmlFor="email" className="form-label">
+                  Email:
+                </label>
+                <input
+                  type="email"
+                  className="form-control"
+                  id="email"
+                  name="email"
+                  value={data.email}
+                  onChange={InputEvent}
+                  placeholder="Enter your email"
+                  autoComplete="off"
+                  required
+                />
+              </div>
+              <div className="mb-3">
+                <label htmlFor="phone" className="form-label">
+                  Phone Number:
+                </label>
+                <input
+                  type="tel"
+                  className="form-control"
+                  id="phone"
+                  name="phone"
+                  value={data.phone}
+                  onChange={InputEvent}
+                  placeholder="Enter your phone number"
+                  autoComplete="off"
+                  required
+                />
+              </div>
+              <div className="mb-3">
+                <label htmlFor="other" className="form-label">
+                  Other Info.:
+                </label>
+                <input
+                  type="text"
+                  className="form-control"
+                  id="other"
+                  name="other"
+                  value={data.other}
+                  onChange={InputEvent}
+                  placeholder="Enter other information"
+                  autoComplete="off"
+                  required
+                />
+              </div>
+              <button type="submit" className="btn btn-outline-primary mt-3">
                 Submit
               </button>
             </form>
