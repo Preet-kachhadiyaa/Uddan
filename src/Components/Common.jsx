@@ -1,5 +1,4 @@
 import React from "react";
-import "/node_modules/bootstrap/dist/css/bootstrap.min.css";
 import { NavLink } from "react-router-dom";
 
 const Common = (props) => {
@@ -8,7 +7,7 @@ const Common = (props) => {
       <section id="header" className="">
         <div className="container-fluid">
           <div className="row pt-5">
-            <div className="col-11 mx-auto">
+            <div className="col-12 mx-auto">
               <div className="row">
                 <div className="col-lg-6 col-md-6 col-12 img-header">
                   <img

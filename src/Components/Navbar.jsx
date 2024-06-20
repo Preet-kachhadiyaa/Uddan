@@ -1,5 +1,5 @@
 import React from "react";
-import "/node_modules/bootstrap/dist/css/bootstrap.min.css";
+import "D:/PROJECT/React/Uddan/bootstrap.min.css";
 import "/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
 import { NavLink, Link } from "react-router-dom";
 
@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <>
       <div className="container-fluid">
-        <div className="row col-11 mx-auto">
+        <div className="row col-12 mx-auto">
           <nav className="navbar navbar-expand-lg navbar-light bg-light">
             <div className="container-fluid">
               <Link className="navbar-brand" to="/">
@@ -28,7 +28,7 @@ const Navbar = () => {
                 className="collapse navbar-collapse"
                 id="navbarSupportedContent"
               >
-                <ul className="navbar-nav mb-2 mb-lg-0">
+                <ul className="navbar-nav ml-auto mb-2 mb-lg-0">
                   <li className="nav-item">
                     <NavLink
                       className="nav-link"

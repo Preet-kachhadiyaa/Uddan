@@ -1,5 +1,4 @@
 import React from "react";
-import "/node_modules/bootstrap/dist/css/bootstrap.min.css";
 import Card from "../Components/Card";
 import CardData from "../Components/CardData";
 
