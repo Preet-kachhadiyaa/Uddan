@@ -1,6 +1,6 @@
 import React from "react";
-import '../assets/css/bootstrap.min.css';
-import "/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
+import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import "../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
 import { NavLink, Link } from "react-router-dom";
 
 const Navbar = () => {
@@ -28,7 +28,7 @@ const Navbar = () => {
                 className="collapse navbar-collapse"
                 id="navbarSupportedContent"
               >
-                <ul className="navbar-nav ml-auto mb-2 mb-lg-0">
+                <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                   <li className="nav-item">
                     <NavLink
                       className="nav-link"
