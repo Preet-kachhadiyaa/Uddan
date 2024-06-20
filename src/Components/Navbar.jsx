@@ -1,7 +1,4 @@
 import React from "react";
-// import '../../path/to/bootstrap.min.css';
-// import '../../src/bootstrap.min.css'
-// import '../../src/assets/css/bootstrap.min.css';
 import '../assets/css/bootstrap.min.css';
 import "/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
 import { NavLink, Link } from "react-router-dom";
