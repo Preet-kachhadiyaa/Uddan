@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+*{
+  font-family: 'Mulish', sans-serif;
+  scroll-behavior: smooth;
+}
+
+.navbar{
+  background-color: white !important;
+}
+.navbar-nav{
+  font-size: 1.2rem;
+  /* margin-left: 590px; */
+}
+
+.navbar-nav a:hover{
+  color: #3498db;
+}
+
+.navbar-brand{
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.active{
+  font-weight: bold;
+  border-bottom: 1px solid #565687;
+}
+
+.space{
+  padding-top: 75px;
+  padding-left: 145px;
+}
+
+.text{
+  color: #71afd7;
+}
+/* ------------------Home + About---------------- */
+.get-started{
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 50px;
+  transition: 0.5s;
+  color: #3498db;
+  border: 2px solid #3498db;
+  text-decoration: none;
+}
+
+#header{margin-bottom: 105px;}
+
+.get-started:hover{
+  background-color: #3498db;
+  color: white;
+}
+
+.img-header{
+  text-align: left;
+  
+}
+
+#header .animated{
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+h1 strong,.head{
+  font-family: 'MV Boli', serif;
+}
+
+@-webkit-keyframes up-down{
+  0% {
+      transform: translateY(10px);
+  }
+  100%{
+    transform: translateY(-10%);
+  }
+}
+
+@keyframes up-down{
+  0% {
+    transform: translateY(10px);
+}
+100%{
+  transform: translateY(-10%);
+}
+}
+
+@media only screen and (max-width:400px){
+  .navbar-nav{
+    font-size: 1.0rem;
+    margin-left: 0px;
+  }
+
+  .space{
+    margin-left: -45px;
+    margin-top: -20px; 
+  }
+
+  .get-started{
+    font-size: 10px;  
+  }
+}
+
+/* -----------------Services----------------- */
+
+.text1{
+  font-size: 14px;
+  text-align: center;
+}
+
+.card-btn{
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 6px 20px;
+  border-radius: 50px;
+  transition: 0.5s;
+  color: #3498db;
+  border: 1px solid #3498db;
+  text-decoration: none;
+}
+
+.card-btn:hover{
+  background-color: #3498db;
+  color: white;
+}
+
+/* ------------Footer----------------- */
+footer {
+  background: #eeeeee;
+}
+footer .footer_main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+}
+footer .footer_main .footer_tag {
+  text-align: center;
+}
+footer .footer_main .footer_tag h2 {
+  color: #000;
+  margin-bottom: 25px;
+  font-size: 23px;
+  font-weight: 900;
+}
+footer .footer_main .footer_tag p {
+  margin: 10px 0;
+  color: #000;
+}
+footer .footer_main .footer_tag  a {
+  text-decoration: none;
+}
+footer .footer_main .footer_tag a p:hover{
+  color:  #3498db;
+}
+footer .footer_main .footer_tag i {
+  margin: 0 5px;
+  cursor: pointer;
+}
+footer .end {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+}
+footer .end span {
+  color: #3498db;
+  margin-left: 10px;
+  font-family: mv boli;
+}
+@media only screen and ( max-width : 992px) {
+  footer .footer_main {
+    display: flex;
+    flex-direction: column;
+  }
+}
