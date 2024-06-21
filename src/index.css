@@ -5,12 +5,11 @@
   scroll-behavior: smooth;
 }
 
-.navbar{
+/* .navbar{
   background-color: white !important;
 }
 .navbar-nav{
   font-size: 1.2rem;
-  /* margin-left: 590px; */
 }
 
 .navbar-nav a:hover{
@@ -34,7 +33,7 @@
 
 .text{
   color: #71afd7;
-}
+} */
 /* ------------------Home + About---------------- */
 /* .get-started{
   font-weight: 700;
